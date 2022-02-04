@@ -1,8 +1,8 @@
 -- find all products 
-SELECT * FROM product;
+SELECT * FROM products;
  
 -- find all products that cost $1400
-SELECT * FROM product 
+SELECT * FROM products
 Where price = 1400;
  
 -- find all products that cost $11.99 or $13.99
@@ -10,7 +10,7 @@ SELECT * FROM  products
 where price = 11.99 OR 13.99;
  
 -- find all products that do NOT cost 11.99 - using NOT
-SELECT * FROM product
+SELECT * FROM products
 WHERE Not price = 11.99;
  
 -- find  all products and sort them by price from greatest to least
@@ -18,11 +18,11 @@ WHERE Not price = 11.99;
  Order by price desc;
  
 -- find all employees who don't have a middle initial
- select * from emmployees
- where middleinitial;
+ select * from employees
+ where  middleinitial is null;
  
 -- find distinct product prices
- select * from product
+ select * from products
  Order by prices;
  
 -- find all employees whose first name starts with the letter ‘j’
@@ -34,7 +34,7 @@ WHERE Not price = 11.99;
  Where Name = Macbooks;
 
 -- find all products that are on sale
- Select * From pruduct 
+ Select * From products 
  Where OnSales;
  
 -- find the average price of all products 
